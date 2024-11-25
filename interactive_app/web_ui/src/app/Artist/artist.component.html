@@ -1,0 +1,91 @@
+<h2>Artist Management</h2>
+
+<h3>Get an Artist</h3>
+<form (ngSubmit)="getArtist()" style="display: flex; flex-direction: column; max-width: 400px; margin: auto;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="nconst" style="width: 30%;">nconst:</label>
+        <input type="text" [(ngModel)]="currentArtist.nconst" name="nconst" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="title" style="width: 30%;">Title:</label>
+        <input type="text" [(ngModel)]="currentArtist.title" name="title" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="first_name" style="width: 30%;">First name:</label>
+        <input type="text" [(ngModel)]="currentArtist.first_name" name="first_name" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="middle_name" style="width: 30%;">Middle name:</label>
+        <input type="text" [(ngModel)]="currentArtist.middle_name" name="middle_name" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="last_name" style="width: 30%;">Last name:</label>
+        <input type="text" [(ngModel)]="currentArtist.last_name" name="last_name" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="suffix" style="width: 30%;">Suffix:</label>
+        <input type="text" [(ngModel)]="currentArtist.suffix" name="suffix" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="birth_year" style="width: 30%;">Birth year:</label>
+        <input type="text" [(ngModel)]="currentArtist.birth_year" name="birth_year" required style="width: 65%;">
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+        <label for="death_year" style="width: 30%;">Death year:</label>
+        <input type="text" [(ngModel)]="currentArtist.death_year" name="death_year" required style="width: 65%;">
+    </div>
+
+    <button type="submit" style="align-self: center; padding: 8px 16px; margin-top: 12px;">Get Artist</button>
+</form>
+
+
+<!--
+<form (ngSubmit)="createArtist()">
+    <label for="nconst">nconst:</label>
+    <input type="text" [(ngModel)]="newArtist.nconst" name="nconst" required><br>
+    <label for="title">Title:</label>
+    <input type="text" [(ngModel)]="newArtist.title" name="title" required><br>
+    <label for="first_name">First name:</label>
+    <input type="text" [(ngModel)]="newArtist.first_name" name="first_name" required><br>
+    <label for="middle_name">Middle name:</label>
+    <input type="text" [(ngModel)]="newArtist.middle_name" name="middle_name" required><br>
+    <label for="last_name">Last name:</label>
+    <input type="text" [(ngModel)]="newArtist.last_name" name="middle_name" required><br>
+    <label for="suffix">Suffix:</label>
+    <input type="text" [(ngModel)]="newArtist.suffix" name="suffix" required><br>
+    <label for="birth_year">Birth year:</label>
+    <input type="text" [(ngModel)]="newArtist.birth_year" name="birth_year" required><br>
+    <label for="death_year">Death year:</label>
+    <input type="text" [(ngModel)]="newArtist.death_year" name="death_year" required><br>
+    <button type="submit">Get Artist</button>
+</form>
+-->
+
+<!--
+<h3>Existing Artist</h3>
+<ul>
+  <li *ngFor="let Artist of Artists">
+    {{ Artist.name }} ({{ Artist.description }})
+    <button (click)="editArtist(Artist)">Edit</button>
+    <button (click)="deleteArtist(Artist.id)">Delete</button>
+  </li>
+</ul>
+
+<div *ngIf="selectedArtist">
+  <h3>Edit Artist</h3>
+  <form (ngSubmit)="updateArtist()">
+    <label for="name">Name:</label>
+    <input type="text" [(ngModel)]="selectedArtist.name" name="name" required>
+    <label for="description">Description:</label>
+    <input type="text" [(ngModel)]="selectedArtist.description" name="description" required>
+    <button type="submit">Update Artist</button>
+  </form>
+</div>
+-->

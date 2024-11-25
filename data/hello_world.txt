@@ -1,3 +1,0 @@
-This is a small file to test downloading code.
-
-Download worked?
